@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+{% block title %} 
+  修改课程信息
+{% end %}
+
+{% block content1 %} 
+   <div style="position:absolute;left:35px;top:420px;width:600px;height:350px;">
+	<a href="/coulist">返回主页</a>
+	<big>请勿随意修改</big>
+	 <blink>谢谢！！！</blink>
+
+	<form action="/couedit/{{course['cou_sn']}}" method="post">
+<font color=#rrggbb>
+    序号：<input type="INTEGER" name="cou_sn" value="{{course['cou_sn']}}"><br>
+    学号：<input type="text" name="cou_no" value="{{course['cou_no']}}"> <br>
+    姓名：<input type="text" name="name" value="{{course['name']}}"> <br>
+    班级：<input type="text" name="classroom" value="{{course['classroom'] }}"><br>
+    性别：<input type="text" name="sex" value="{{course['sex']}}"> <br>
+    出生日期；<input type="text" name="birthday" value="{{course['birthday']}}"> <br>
+</font>
+    <input typsubmit" value="提交"/>
+
+    </form>
+    
+</div>
+
+{% end %}

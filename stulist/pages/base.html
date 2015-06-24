@@ -1,0 +1,113 @@
+﻿<html>
+  <head>
+    <title>{% block title %} 
+学生信息管理系统  
+{% end %}</title>
+    <link rel="stylesheet" href="static/css/zzsc.css" type="text/css" media="screen" />
+    <script type="text/javascript" src="static/js/jquery.min.js"></script>
+    <script type="text/javascript" src="static/js/zzsc.js"></script>
+    
+    <style type="text/css">
+        *{margin:0;padding: 0;}
+        body{font-size: 12px;font-family: "微软雅黑";color: #666;}
+        img{border: 0}
+        .head{float: left;  width: 100% ; height:10%;background:#46A3FF; }
+        .head_1{float:left;width: 700px ; height:100%;margin-left: 300px;font-size: 50px;color: black;font-family: "黑体";text-align: center;font-weight: bold;line-height: 60px;background:#46A3FF }
+        .head_2{float: right;width: 250px;height: 60px;margin-top: 20px;margin-right: 20px;line-height:50px;text-align: right ;font-size: 20px;color: white;font-family: "仿宋";}
+        .foot_1{float: right;width: 86.5%;height: 100%;line-height: 40px;font-size: 11px;color: black;font-family: "宋体"}
+        .foot{float: right;width: 13%;height: 100%;font-size: 20px;color: black;font-family: "仿宋";text-align: center;font-weight: bold;line-height: 20px;background:#46A3FF}
+        .box_1{float: left;  width: 100% ; height:84%;}
+        .box_1_in{float: left;  width: 25% ; height:60%;border:white 3px solid;}
+        .box_1_in11{float: left;  width: 73% ; height:100%;}
+        .box_1_in_1{width: 100%;height: 20%;background: black;line-height: 60px;font-size: 35px;text-align: center;color:white;font-family: "微软雅黑";font-weight: bold;}
+        .box_1_in_2{width: 40%;height: 10%;background:blue ;line-height: 30px;text-align: center;font-size: 22px;color: white;font-family: "仿宋";font-weight: bold;margin-top: 30px;margin-left: 100px;text-decoration: underline;}
+
+        .box_in11_1{width: 600px;height: 350px;margin-top: 17px;margin-left: 92px;border: white 3px solid;}
+        .box_in11_2{float:left;width: 260px;height: 510px;margin-top: 5px;margin-left: 720px;}
+        .box_in11_2_1{float:left;width: 100px;height: 360px;margin-top: 0px;margin-left: 30px;}
+        .box_in11_2_2{float:left;width: 100px;height: 360px;margin-left: 0px;margin-top: 146px;}
+        .box_in11_2_3{float:left;width: 100%;height: 89px;margin-top: 0px;margin-left: 0px;line-height: 80px;text-align: center;font-size: 60px;color: white;font-family: "宋体";font-weight: bold;}
+        .box_2{float: left;  width: 100% ; height:6%;background:#8600FF;}
+        
+
+   </style>
+
+  </head>
+  <body onload="setInterval('change()',1000)">
+  
+  <div id="beijingtu" style="position:absolute; width:100%; height:100%; z-index:-1">    
+       <img src="/static/1182806.jpg" height=100% width=100%  />
+  </div>
+  <div class="head">
+    <div class="head_1">天津工业大学</div>
+    <div class="head_2">学生信息管理系统</div>
+    
+
+  </div>
+  <div class="box_1">
+    <div class="box_1_in">
+      <div class="box_1_in_1">综合服务</div>
+      <div class="box_1_in_2"><a href="/coulist">学生信息</a></div>
+      <div class="box_1_in_2"><a href="http://jwpt.tjpu.edu.cn:8081/">学生登录</a></div>
+      <div class="box_1_in_2"><a href="http://61.181.142.4:8080/tellin/usr/unicom/login/login.do">校园网查询</a></div>
+      <div class="box_1_in_2"><a href="http://www.douyutv.com/">娱乐</a></div>
+
+      
+    </div>
+    <div class="box_1_in11">
+       <div class="box_in11_2">
+          
+         <div class="box_in11_2_1">
+           <div class="box_in11_2_3">严</div>
+           <div class="box_in11_2_3">谨</div>
+           <div class="box_in11_2_3">严</div>
+           <div class="box_in11_2_3">格</div>
+         </div>
+         <div class="box_in11_2_2">
+           <div class="box_in11_2_3">求</div>
+           <div class="box_in11_2_3">实</div>
+           <div class="box_in11_2_3">求</div>
+           <div class="box_in11_2_3">是</div>
+         </div>
+         
+       </div>
+       <div class="box_in11_1">
+
+      </div>
+      <div  style="position:absolute;left:440px;top:83px;width:599px;height:350px;">
+          <marquee height="350" direction="up" hspace="0" scrollamount="2" >
+    <p><font size="3" color="black">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;天津工业大学（Tianjin Polytechnic University缩写：TJPU），简称天工大，是天津市重点建设的公办全日制高等学校、天津市重点建设的全日制普通高等学校。学校历史悠久，最早的系始建于1912年，是一所以工为主，工理结合，工、理、文、管、经、法协调发展的多科性大学，拥有培养学士、硕士、博士的完整教育体系，参与国家“863”、“973”计划，在教育部首批本科教学评估中获得优秀，被教育部评为“全国毕业生就业典型经验高校”。</font></p> 
+    <p><font size="3" color="black">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;截至2013年，学校总占地面积230.8102万平方米，总建筑面积97.0527万平方米，下设1个学部、15个学院，全日制在校生28000余人，在校研究生近2000人，留学生约300人，图书馆拥有藏书212.75余万册。</font></p>
+    <p><font size="3" color="black">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;截至2013年，学校承担和完成了国防高科技、国家攻关、“863”、“973”、国家自然科学基金、国家火炬计划和省部级哲学和社会科学基金等科研项目近千项。学校彰显现代纺织和产学研办学特色，形成了以纺织复合材料、中空纤维膜分离技术、特种功能纤维材料、纺织油剂助剂、半导体照明与材料、机电设备集成制造等研究为特色的科研优势，多项科研成果被成功应用于节能环保、新材料等国家战略性新兴产业和国防高科技产业。学校科研取得了标志性和突破性成果，获得国家级科技奖励6项，连续多年获得国家科技发明奖和科技进步奖，国际、国内发明专利等500余项，被SCI、EI、ISTP三大索引摘录论文数量逐年递增，每年到位科技经费均保持在1亿元以上。该校教师发表学术论文2119篇，其中SCI、EI、ISTPI等三大检索收录论文769篇，出版教材和著作26部材。</font></p>
+    <p><font size="3" color="black">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;截至2013年，学校拥有1个省部共建国家重点实验室培育基地，2个教育部重点实验室、5个天津市重点实验室，2个教育部工程研究中心和4个天津市工程技术中心、1个天津市技术推广中心以及1个天津市人文社会科学重点研究基地。</font></p>
+    <p><font size="3" color="black">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;截至2013年，天津工业大学图书馆建筑面积约5.3万平方米，共有阅览座位4000余个，电子阅览位近600个。馆藏中外文纸质图书234万余册，中外文期刊1500余种，报纸90余种。电子图书130余万种；中文电子期刊10000余种；英文电子期刊25000余种。先后引进近80多个数据库，包括CNKI中国知网、中文社会科学引文索引 CSSCI、读秀学术搜索等中文数据库；以及《SCI》(科学引文索引)、《IEL》（IEE/IEEE电子图书馆）、Elseiver公司SDOS、《SciFinder Scholar》（化学文摘网络版）、《EI》（工程索引）等英文全文及文摘数据库；并组织力量制作《天津工业大学博硕士学位论文全文库》、《纺织特色外文文献全文数据库》、《服装信息平台数据库》等自建数据库。</font></p>
+    <p><font size="3" color="black">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;《天津工业大学学报》是由天津市教育委员会主管、天津工业大学主办的自然科学版学术类期刊，1982年创刊，双月刊，国内外公开发行。本刊为中文核心期刊、中国科技核心期刊，并被评为天津市优秀期刊。《天津工业大学学报》加入美国《世界纺织文摘》、美国《化学文摘：光盘版》、俄罗斯《文摘杂志》、美国《剑桥科学文摘：工程技术》、美国《乌利希期刊指南》共5种国际检索机构，并全文载入《中国学术期刊(光盘版)》、《中国知网》、《万方数据资源系统数字化期刊群》、《中文科技期刊数据库》和《台湾中文电子期刊服务—思博网（CEPS）》等大型数据库。</font></p>
+    <p><font size="3" color="black">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;截至2013年，学校有2个一级学科博士点、14个二级学科博士点、20个一级学科硕士点、72个二级学科硕士点和4个专业硕士学位点（含15个工程硕士授予领域），有53个本科专业，其中6个国家级特色专业、15 个天津市品牌专业、6 个天津市战略性新兴产业相关专业，有25个高职专业。设有3个博士后流动站。学校拥有1个国家重点学科、7个天津市重点学科、3个天津市“重中之重”学科、1个天津市重点发展学科。</font></p>
+    
+  </marquee>
+      </div>
+     
+
+    </div>
+    
+   
+  </div>
+  <div class="box_2">
+    <div class="foot"> 
+    <div id="time"></div>
+    <script type="text/javascript">
+    function change()
+    {
+        var today;
+        today=new Date();
+        timeString=today.toLocaleString();
+        document.getElementById("time").innerHTML=timeString;
+    }
+    </script>
+    </div>
+    <div class="foot_1"><h1><marquee><p>天津工业大学是教育部与天津市共建、天津市重点建设的公办全日制高等学校。学校历史悠久，最早的系始建于1912年，现已成为一所以工为主，工理结合，工、理、文、管、经、法协调发展的多科性大学，具有培养学士、硕士博士、博士后的完整教育体系。</p></marquee></h1></div>
+  </div>
+  {% block content1 %}
+  {% end %}
+  </body>
+</html>
